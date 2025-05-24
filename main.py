@@ -50,7 +50,7 @@ def main():
         for a in asteroids:
             for s in shots:
                 if s.check_for_collisions(a) == True:
-                    a.kill()
+                    a.split()
                     s.kill()
         
 
